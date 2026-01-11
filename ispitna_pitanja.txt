@@ -1,0 +1,57 @@
+# DIAA - ispitna pitanja - prvi deo
+
+1. Prefiksno drvo - pojam, svojstva, primene, primeri
+
+2. Prefiksno drvo - implementacija, složenost osnovnih operacija, poređenje sa balansiranim binarnim stablima i heš tabelama
+
+3. Disjunktni skupovi (union-find) - opis efikasne strukture podataka i operacija nad njom (poređenje sa jednostavnom strukturom podataka za rešavanje istog problema), primeri
+
+4. Disjunktni skupovi (union-find) - implementacija, kompresija putanje,
+složenost osnovnih operacija
+
+5. Upiti raspona - pojam, osnovne tehnike za rešavanje problema
+
+6. Segmentna drveta - pojam, svojstva, primeri, formiranje segmentnog drveta
+(pristup odozdo naviše i pristup odozgo naniže)
+
+7. Segmentna drveta - računanje zbira elemenata iz nekog segmenta (pristup odozdo naviše i pristup odozgo naniže), primeri
+
+8. Segmentna drveta - ažuriranje vrednosti elementa (pristup odozdo naviše i
+pristup odozgo naniže), primeri
+
+9. Grafovi - osnovni pojmovi, reprezentacije netežinskih i težinskih grafova, složenost osnovnih operacija
+
+10. Grafovi - algoritam pretrage u dubinu, ulazna i izlazna obrada, složenost,
+korektnost, primeri, određivanje komponenti povezanosti neusmerenog
+grafa
+
+11. Grafovi - konstrukcija DFS drveta i DFS numeracija, klasifikacija grana
+neusmerenog grafa, primer
+
+12. Grafovi - klasifikacija grana usmerenog grafa, primer, odnos odlazne numeracije i tipa grane, ispitivanje da li graf sadrži usmereni ciklus
+
+13. Grafovi - algoritam pretrage u širinu, složenost, BFS drvo, BFS numeracija, osnovna svojstva, primeri
+
+14. Grafovi - artikulacione tačke - pojam, karakterizacija, određivanje svih artikulacionih tačaka u grafu, primer
+
+15. Grafovi - komponente jake povezanosti - svojstva, Tardžanov algoritam
+
+16. Grafovi - komponente jake povezanosti - svojstva, Kosaradžuov algoritam
+
+17. Grafovi - mostovi - pojam, karakterizacija, određivanje svih mostova u
+grafu, primer
+
+18. Grafovi - Dajkstrin algoritam za određivanje najkraćih puteva iz zadatog čvora, primer
+
+19. Grafovi - Algoritam za određivanje svih najkraćih puteva u grafu indukcijom po broju čvorova i indukcijom po broju grana, složenost, primer
+
+20. Grafovi - Belman-Fordov algoritam za određivanje najkraćih puteva iz zadatog čvora, primer
+
+21. Grafovi - Flojd-Varšalov algoritam za određivanje svih najkraćih puteva u
+grafu, primer
+
+22. Grafovi - Tranzitivno zatvorenje grafa, složenost algoritma, primer
+
+23. Grafovi - Primov algoritam za određivanje minimalnog povezujućeg drveta, primer
+
+24. Grafovi - Kruskalov algoritam za određivanje minimalnog povezujućeg drveta, primer
