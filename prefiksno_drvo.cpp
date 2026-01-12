@@ -4,48 +4,48 @@
 namespace my{
     class Trie{
         public:
-            Trie(): niz(26){}
+            Trie(): pointers(26){}
             ~Trie(){}
             
             bool find(std::string_view s){
                 if(!s.empty()){
-                    if(nullptr != niz[s[0]-'a']){
-                        return niz[s[0]-'a']->find(s.substr(1));
+                    if(nullptr != pointers[s[0]-'a']){
+                        return pointers[s[0]-'a']->find(s.substr(1));
                     } else {
                         return false;
                     }
                 } else {
-                    return indikator;
+                    return indicator;
                 }
             }
             
             void add(std::string_view s){
                 if(!s.empty()){
-                    if(nullptr != niz[s[0]-'a']){
-                        niz[s[0]-'a']->add(s.substr(1));
+                    if(nullptr != pointers[s[0]-'a']){
+                        pointers[s[0]-'a']->add(s.substr(1));
                     } else {
-                        niz[s[0]-'a'] = new my::Trie();
-                        niz[s[0]-'a']->add(s.substr(1));
+                        pointers[s[0]-'a'] = new my::Trie();
+                        pointers[s[0]-'a']->add(s.substr(1));
                     }
                 } else {
-                    indikator = true;
+                    indicator = true;
                 }
             }
             
             void remove(std::string_view s){
                 if(!s.empty()){
-                    if(nullptr != niz[s[0]-'a']){
-                        niz[s[0]-'a']->remove(s.substr(1));
+                    if(nullptr != pointers[s[0]-'a']){
+                        pointers[s[0]-'a']->remove(s.substr(1));
                     } else {
                         std::cout << "already not in" << std::endl;
                     }
                 } else {
-                    indikator = false;
+                    indicator = false;
                 }
             }
         private:
-            std::vector<Trie*> niz;
-            bool indikator;
+            std::vector<Trie*> pointers;
+            bool indicator;
     };
 }
 
