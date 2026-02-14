@@ -25,10 +25,12 @@ namespace my{
                     neighbours[y].emplace_back(x);
             }
             
-            void find_bridges(){
+            void find_articulation_points(){
                 std::vector<bool> visited(neighbours.size());
                 std::vector<int> pre(neighbours.size());
                 std::vector<int> lowlink(neighbours.size());
+                std::vector<bool> articulation_points(neighbours.size());
+                std::vector<int> number_of_children(neighbours.size());
                 
                 int pre_counter = 0;
                 
@@ -51,9 +53,14 @@ namespace my{
                                 lowlink[parent] = lowlink[v];
                                 //std::cout << "lowlink[" << parent << "] = lowlink[" << v << "]; (= " << lowlink[v] << ")" << std::endl;
                             }
-                            // check if the branch is a bridge
-                            if(pre[parent] < lowlink[v])    // equivalent to (pre[v] == lowling[v])
-                                std::cout << "Edge (" << parent << ", " << v << ") is a bridge" << std::endl;
+                            // articulation points logic START
+                            number_of_children[parent]++;
+                            if(lowlink[v] >= pre[parent])
+                                articulation_points[parent] = true;
+                            if((v == parent) && (number_of_children[v] < (2+1)))
+                            // +1 cuz I count root as it's own child
+                                articulation_points[v] = false;
+                            // articulation points logic END
                             // output processing/on completion END
                         } else {
                             // revisting START
@@ -88,6 +95,11 @@ namespace my{
                     std::cout << inverted_pre[ll] << " ";
                 std::cout << std::endl;
                 */
+                std::cout << "articulation points: ";
+                for(int i=0; i<articulation_points.size(); i++)
+                    if(articulation_points[i])
+                        std::cout << i << " ";
+                std::cout << std::endl;
             }
         
         private:
@@ -142,7 +154,7 @@ int main(){
     graf.add_edge(14, 13);
     graf.add_edge(15, 10);
     
-    graf.find_bridges();
+    graf.find_articulation_points();
     
     return 0;
 }
