@@ -1,4 +1,4 @@
-# DIAA - ispitna pitanja - prvi deo
+# DIAA - ispitna pitanja
 
 1. Prefiksno drvo - pojam, svojstva, primene, primeri
 
@@ -55,3 +55,59 @@ grafu, primer
 23. Grafovi - Primov algoritam za određivanje minimalnog povezujućeg drveta, primer
 
 24. Grafovi - Kruskalov algoritam za određivanje minimalnog povezujućeg drveta, primer
+
+25. Algebarski algoritmi - prosireni Euklidov algoritam: formulacija problema, predstavljanje ostataka preko a i b, primer, primena po izboru
+
+26. Algebarski algoritmi - faktorizacija: pojam, algoritam slozenosti O(sqrt(n)), primene
+
+27. Algebarski algoritmi - Ojlerova funkcija: pojam, algoritam zasnovan na faktorizaciji, primene
+
+28. Algebarski algoritmi - racunanje broja i zbira delilaca: algoritam zasnovan na faktorizaciji broja
+
+29. Algebarski algoritmi - faktorizacija svih brojeva do n i racunanje Ojlerove funkcije svih brojeva do n (Eratostenovo sito)
+
+30. Algebarski algoritmi - modularne grupe, Ojlerova i Fermaova teorema, primene
+
+31. Algebarski algoritmi - modularni multiplikativni inverz, algoritam zasnovan na prosirenom Euklidovom algoritmu, algoritam zasnovan na Ojlerovoj i Maloj Fermaovoj teoremi
+
+32. Algebarski algoritmi - Kineska teorema o ostacima, "Lagranzev" pristup
+
+33. Algebarski algoritmi - RSA kriptografija
+
+34. Algebarski algoritmi - racunanje proizvoda polinoma na dva nacina, osnovna ideja brze Furijeove transformacije
+
+35. Niske - hesiranje niski: pojam hes funkcije i kolizije, definicija polinomijalne hes funkcije, smanjivanje verovatnoce da dodje do kolizije, primene
+
+36. Niske - Ravin-Karpov algoritam, primer
+
+37. Niske - odredjivanje hes vrednosti segmenata niske s[i,..,j]; odredjivanje broja razlicitih segmenata niske koriscenjem hesiranja
+
+38. Niske - KMP algoritam za trazenje uzorka u tekstu: definisanje prefiks-sufiksa, faza pretprocesiranja: inkrementalno racunanje najduzih prefiks-sufiksa svih prefiksa niske (tzv. KMP niza), primer
+
+39. Niske - KMP algoritam za trazenje uzorka u tekstu: faza trazenja uzorka u tekstu, kada je poznat KMP niz; slozenost KMP algoritma, primer
+
+40. Niske - ispitivanje periodicnosti niske
+
+41. Geometrijski algoritmi - skalarni i vektorski proizvod i primene
+
+42. Geometrijski algoritmi - racunanje povrsine trougla i mnogougla i primene
+
+43. Geometrijski algoritmi - utvrdjivanje orijentacije trojke tacaka u ravni i njene primene
+
+44. Geometrijski algoritmi - utvrdjivanje da li tacka pripada proizvoljnom prostom mnogouglu, analiza slozenosti, primer
+
+45. Geometrijski algoritmi - konstrukcija prostog mnogougla, analiza slozenosti, primer
+
+46. Geometrijski algoritmi - preseci vertikalnih i horizontalnih duzi
+
+47. Geometrijski algoritmi - ispitivanje da li tacka pripada konveksnom mnogouglu, analiza slozenosti, primer
+
+48. Geometrijski algoritmi - konstrukcija konveksnog omotaca - algoritam uvijanja poklona, analiza slozenosti, primer
+
+49. Geometrijski algoritmi - konstrukcija konveksnog omotaca - Grejemov algoritam, analiza slozenosti, primer
+
+50. Geometrijski algoritmi - konstrukcija konveksnog omotaca - brzi algoritam (QuickHull), analiza slozenosti, primer
+
+51. Geometrijski algoritmi - najdalje tacke
+
+52. Geometrijski algoritmi - presek konveksnih mnogouglova
